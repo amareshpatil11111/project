@@ -14,7 +14,7 @@ services:
         value: "5000"
     healthCheckPath: /health
 
-  - type: static
+  - type: web
     name: portfolio-frontend
     env: static
     plan: free
