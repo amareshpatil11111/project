@@ -2,7 +2,7 @@ services:
   - type: web
     name: portfolio-backend
     env: node
-    plan: free
+    plan: starter
     buildCommand: cd backend && npm install
     startCommand: node server.js
     envVars:
@@ -17,7 +17,7 @@ services:
   - type: web
     name: portfolio-frontend
     env: static
-    plan: free
+    plan: starter
     buildCommand: cd frontend && npm install && npm run build
     staticPublishPath: frontend/dist
     envVars:
